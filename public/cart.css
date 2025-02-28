@@ -1,0 +1,151 @@
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    background: url('../uploads/Bbt.jpg');
+    background-size: cover;
+    margin: 0;
+    padding-top: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Conteneur principal du panier */
+.cart {
+    width: 90%;
+    max-width: 900px;
+    background: #ffeddd;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Tableau du panier */
+.cart table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.cart th, .cart td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.cart th {
+    background: #FF9800;
+    color: white;
+    font-weight: bold;
+}
+
+/* Image des produits */
+.cart img.cart-img {
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.cart img.cart-img:hover {
+    transform: scale(1.1);
+}
+
+/* Champ quantité */
+.cart input {
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Total du panier */
+.total {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Message panier vide */
+.empty-cart {
+    font-size: 1.2em;
+    color: gray;
+    margin-top: 20px;
+}
+
+/* BOUTONS */
+.cart-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Styles généraux des boutons */
+.cart-buttons button,
+.cart-buttons a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Bouton "Mettre à jour" */
+.update-btn {
+    background: #007BFF;
+    color: white;
+}
+
+.update-btn:hover {
+    background: #0056b3;
+}
+
+/* Bouton "Vider le panier" */
+.empty-btn {
+    background: red;
+    color: white;
+}
+
+.empty-btn:hover {
+    background: darkred;
+}
+
+/* Bouton "Commander" */
+.checkout-btn {
+    background: #FF9800;
+    color: white;
+}
+
+.checkout-btn:hover {
+    background: #e68900;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .cart {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .cart-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cart-buttons button,
+    .cart-buttons a {
+        width: 100%;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,104 @@
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    background: url('../uploads/Bbt.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 81vh;
+    margin: 0;
+}
+
+/* Conteneur */
+.container {
+    background: #ffeddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Formulaire */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Champs */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkbox {
+    text-align: center;
+    display: flex;
+    padding-bottom: 10px;
+    gap: 10px;
+    align-items: stretch;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+/* Bouton */
+button {
+    background-color: #d88629;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #87541a;
+}
+
+/* Liens */
+p {
+    text-align: center;
+}
+
+p a {
+    color: #d88629;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Messages d'erreur et succès */
+.error {
+    background: #ffdddd;
+    color: #d8000c;
+    padding: 0px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.success {
+    background: #ddffdd;
+    color: #008000;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,92 @@
+/* Styles de base */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('../uploads/Bbt.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
+    margin: 0;
+}
+
+/* Conteneur principal */
+.profile-container {
+    width: 90%;
+    max-width: 800px;
+    background: #ffeddd;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Carte Profil */
+.profile-card {
+    background: #985810;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.profile-card h2 {
+    margin-bottom: 10px;
+}
+
+.profile-card p {
+    margin: 8px 0;
+}
+
+/* Table des commandes */
+.orders-container {
+    margin-top: 20px;
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.order-table th, .order-table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.order-table th {
+    background: #985810;
+    color: white;
+}
+
+.order-table tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Message si aucune commande */
+.empty {
+    background: #ffe0e0;
+    color: #cc0000;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .profile-container {
+        width: 95%;
+    }
+
+    .profile-card {
+        padding: 15px;
+    }
+
+    .order-table th, .order-table td {
+        padding: 10px;
+    }
+}

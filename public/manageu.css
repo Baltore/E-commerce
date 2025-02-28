@@ -1,0 +1,42 @@
+/* Section Admin */
+.admin-users {
+    text-align: center;
+    padding: 5% 20px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background: #007BFF;
+    color: white;
+}
+
+/* Sélecteur de rôle */
+select {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/* Boutons */
+.delete-btn {
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}

@@ -1,0 +1,76 @@
+/* Section Admin */
+.admin-dashboard {
+    text-align: center;
+    padding: 5% 20px;
+}
+
+/* Tableaux */
+table {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background: #007BFF;
+    color: white;
+}
+
+.delete-btn {
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: -1%;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+/* Bouton Déconnexion */
+.logout-btn {
+    background: red;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.logout-btn:hover {
+    background: darkred;
+}
+
+/* Liens Admin */
+.admin-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.admin-btn {
+    background: #007BFF;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.admin-btn:hover {
+    background: #0056b3;
+}
+
+@media (max-width: 1024px) {
+    .logout-btn {
+        padding: 5px 8px; 
+        font-size: 12px;
+    }
+}
+

@@ -1,0 +1,80 @@
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    background: url('../uploads/Bbt.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+}
+
+/* Page produit */
+.product {
+    display: flex;
+    background: #724410;
+    box-shadow: -9px 4px 10px 20px rgb(0 0 0 / 25%);
+    border-radius: 5%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.product-image img {
+    height: 300px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.product-details {
+    max-width: 500px;
+}
+
+.product-details h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.product-details .price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000000;
+    margin: 10px 0;
+}
+
+/* Boutons */
+.btn {
+    background: #d88629;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #945610;
+}
+
+.back-btn {
+    background: #ccc;
+    color: black;
+}
+
+.back-btn:hover {
+    background: #aaa;
+}
+
+/* Messages de succès */
+.success {
+    background: #ddffdd;
+    color: #008000;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 15px 0;
+}

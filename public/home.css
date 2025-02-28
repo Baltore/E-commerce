@@ -1,0 +1,136 @@
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    background: url('../uploads/Bbt.jpg');
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+}
+
+
+/* Bannière */
+.banner {
+    background: linear-gradient(to right, #d88629, #9a601d);
+    color: white;
+    text-align: center;
+    padding: 80px 40px; 
+    border-radius: 10px; 
+    max-width: 800px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 50px; 
+}
+
+
+.banner h1 {
+    font-size: 2.5em;
+}
+
+.banner p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.banner .btn {
+    background: white;
+    color: #d88629;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.banner .btn:hover {
+    background: #ddd;
+}
+
+/* Section Livres Mis en Avant */
+.featured-books {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px; 
+    width: 100%;
+    max-width: 1200px; 
+}
+
+.featured-books h2 {
+    color: white;
+}
+
+.book-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.book-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 200px;
+    text-align: center;
+}
+
+.book-card img {
+    width: 200px;
+    height: 290px;
+    border-radius: 5px;
+}
+
+.book-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+
+.book-card .price {
+    font-weight: bold;
+    color: #000000;
+}
+
+.book-card .btn {
+    background: #d88629;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.book-card .btn:hover {
+    background: #805019;
+}
+
+@media (max-width: 768px) {
+    body {
+        justify-content: flex-start; 
+    }
+
+    .banner {
+        padding: 50px 20px; 
+    }
+
+    .book-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book-card {
+        max-width: 250px;
+    }
+}
+
