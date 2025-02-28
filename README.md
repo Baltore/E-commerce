@@ -55,6 +55,8 @@ Mdp  : testtest
 Mail : admin@admin.com
 Mdp  : adminadmin
 
+Pour tous les autres users c'est leurs mail + mdp : 'password'
+
 
 ## Améliorations futures
 -  Ajout d'un système de notation et de commentaires
