@@ -48,9 +48,10 @@ th {
 /* Liens Admin */
 .admin-links {
     display: flex;
-    justify-content: center;
     gap: 20px;
     margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .admin-btn {

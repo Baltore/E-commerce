@@ -2,6 +2,9 @@
 .admin-dashboard {
     text-align: center;
     padding: 40px 20px;
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    margin-top: 3%;
 }
 
 /* Conteneur des stats */
@@ -15,12 +18,18 @@
 
 /* Cartes de stats */
 .stat-card {
-    background: white;
+    background: linear-gradient(135deg, #007BFF, #0056b3);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 220px;
     text-align: center;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.stat-card:hover {
+    transform: scale(1.05);
 }
 
 .stat-card h3 {
@@ -31,7 +40,6 @@
 .stat-card p {
     font-size: 1.5em;
     font-weight: bold;
-    color: #007BFF;
 }
 
 /* Conteneur des graphiques */
@@ -43,7 +51,27 @@
     padding: 20px;
 }
 
-canvas {
-    max-width: 400px;
-    height: auto;
+.chart-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chart-box p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .stats-container, .charts-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chart-box {
+        width: 90%;
+    }
 }

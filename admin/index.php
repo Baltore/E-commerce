@@ -23,9 +23,10 @@ Middleware::requireAdmin();
         <p>Bienvenue dans l'espace d'administration. Sélectionnez une action :</p>
 
         <div class="admin-links">
+            <a href="dashboard" class="admin-btn">📊 Données du Site </a>
+            <a href="manage_orders" class="admin-btn">📦 Gérer les Commandes</a>
             <a href="manage_books" class="admin-btn">📚 Gérer les Livres</a>
             <a href="manage_users" class="admin-btn">👥 Gérer les Utilisateurs</a>
-            <a href="manage_orders" class="admin-btn">📦 Gérer les Commandes</a>
         </div>
     </section>
 

@@ -17,6 +17,7 @@ redirectIfNotAdmin();
                 <a href="index">⚙️ Admin Panel</a>
             </div>
             <ul class="admin-nav-links">
+                <li><a href="dashboard">📊 Mon Site</a></li>
                 <li><a href="manage_orders">📦 Commandes</a></li>
                 <li><a href="manage_books">📚 Livres</a></li>
                 <li><a href="manage_users">👥 Utilisateurs</a></li>
